@@ -9,7 +9,7 @@ const Welcome = () => (
   <WelcomeWrapper>
     <p>Welcome to my terminal portfolio!</p>
     <p>
-      Type <strong>help</strong> to see available commands.
+      Type <strong>'help'</strong> to see available commands.
     </p>
   </WelcomeWrapper>
 );

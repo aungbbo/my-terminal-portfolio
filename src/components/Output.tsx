@@ -2,6 +2,7 @@ import { useContext } from "react";
 import Welcome from "./commands/Welcome";
 import Themes from "./commands/Themes";
 import Clear from "./commands/Clear";
+import Help from "./commands/Help";
 import { OutputContainer, UsageDiv } from "./styles/Output.styled";
 import { termContext } from "./Terminal";
 
@@ -25,6 +26,7 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           welcome: <Welcome />,
           themes: <Themes />,
           clear: <Clear />,
+          help: <Help />,
         }[cmd]
       }
     </OutputContainer>

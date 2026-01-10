@@ -1,6 +1,14 @@
 import _ from "lodash";
 import theme from "../components/styles/themes";
 
+export const generateTabs = (num = 0): string => {
+  let tabs = "\xA0\xA0";
+  for (let i = 0; i < num; i++) {
+    tabs += "\xA0";
+  }
+  return tabs;
+};
+
 export const isArgInvalid = (
   arg: string[],
   action: string,

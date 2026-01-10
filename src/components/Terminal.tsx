@@ -27,6 +27,7 @@ type Command = {
 }[];
 
 export const commands: Command = [
+  { cmd: "help", desc: "list all commands", tab: 9 },
   { cmd: "themes", desc: "check available themes", tab: 7 },
   { cmd: "welcome", desc: "display hero section", tab: 6 },
   { cmd: "clear", desc: "clear the terminal", tab: 8 },
