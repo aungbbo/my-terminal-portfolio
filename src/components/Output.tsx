@@ -1,8 +1,9 @@
 import { useContext } from "react";
-import Welcome from "./commands/Welcome";
-import Themes from "./commands/Themes";
 import Clear from "./commands/Clear";
 import Help from "./commands/Help";
+import History from "./commands/History";
+import Themes from "./commands/Themes";
+import Welcome from "./commands/Welcome";
 import { OutputContainer, UsageDiv } from "./styles/Output.styled";
 import { termContext } from "./Terminal";
 
@@ -23,10 +24,11 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
     <OutputContainer>
       {
         {
-          welcome: <Welcome />,
-          themes: <Themes />,
           clear: <Clear />,
           help: <Help />,
+          history: <History />,
+          themes: <Themes />,
+          welcome: <Welcome />,
         }[cmd]
       }
     </OutputContainer>
