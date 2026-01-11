@@ -29,9 +29,13 @@ type Command = {
 export const commands: Command = [
   { cmd: "clear", desc: "clear the terminal", tab: 8 },
   { cmd: "echo", desc: "display a message", tab: 9 },
+  { cmd: "email", desc: "open my email", tab: 8 },
+  { cmd: "github", desc: "open my GitHub profile", tab: 7 },
   { cmd: "gui", desc: "open my portfolio website", tab: 10 },
   { cmd: "help", desc: "list all commands", tab: 9 },
   { cmd: "history", desc: "display command history", tab: 6 },
+  { cmd: "linkedin", desc: "open my LinkedIn profile", tab: 5 },
+  { cmd: "resume", desc: "open my resume PDF", tab: 7 },
   { cmd: "themes", desc: "check available themes", tab: 7 },
   { cmd: "welcome", desc: "display hero section", tab: 6 },
 ];
