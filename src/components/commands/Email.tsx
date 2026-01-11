@@ -10,7 +10,7 @@ const Email: React.FC = () => {
   useEffect(() => {
     if (rerender && currentCommand[0] === "email") {
       const timer = setTimeout(() => {
-        window.open("mailto:aungbobodev@gmail.com", "_blank");
+        window.open("mailto:aungbbo48@gmail.com", "_blank");
       }, 100);
 
       return () => clearTimeout(timer);
