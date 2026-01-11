@@ -69,10 +69,6 @@ export const TextContainer = styled.div`
   font-size: 0.875rem;
   margin-top: 1rem;
 
-  @media (max-width: 550px) {
-    display: none;
-  }
-
   div {
     margin-top: 0.25rem;
   }

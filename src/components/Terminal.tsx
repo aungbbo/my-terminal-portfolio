@@ -29,7 +29,7 @@ type Command = {
 export const commands: Command = [
   { cmd: "about", desc: "display about me", tab: 8 },
   { cmd: "clear", desc: "clear the terminal", tab: 8 },
-  { cmd: "echo", desc: "display a message", tab: 9 },
+  { cmd: "echo", desc: "display any message", tab: 9 },
   { cmd: "email", desc: "open my email", tab: 8 },
   { cmd: "github", desc: "open my GitHub profile", tab: 7 },
   { cmd: "gui", desc: "open my portfolio website", tab: 10 },
@@ -40,7 +40,7 @@ export const commands: Command = [
   { cmd: "pwd", desc: "display current working directory", tab: 10 },
   { cmd: "resume", desc: "open my resume PDF", tab: 7 },
   { cmd: "themes", desc: "check available themes", tab: 7 },
-  { cmd: "welcome", desc: "display hero section", tab: 6 },
+  { cmd: "welcome", desc: "display a banner", tab: 6 },
   { cmd: "whoami", desc: "display current user", tab: 7 },
 ];
 
