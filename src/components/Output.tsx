@@ -7,6 +7,7 @@ import Gui from "./commands/Gui";
 import Help from "./commands/Help";
 import History from "./commands/History";
 import Linkedin from "./commands/Linkedin";
+import Projects from "./commands/Projects";
 import Resume from "./commands/Resume";
 import Themes from "./commands/Themes";
 import Welcome from "./commands/Welcome";
@@ -21,7 +22,7 @@ type Props = {
 const Output: React.FC<Props> = ({ index, cmd }) => {
   const { arg } = useContext(termContext);
 
-  const specialCmds = ["echo", "themes"]; // commands that accept args
+  const specialCmds = ["echo", "projects", "themes"]; // commands that accept args
 
   if (!specialCmds.includes(cmd) && arg.length > 0)
     return <UsageDiv>Usage: {cmd}</UsageDiv>;
@@ -38,6 +39,7 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           github: <Github />,
           gui: <Gui />,
           linkedin: <Linkedin />,
+          projects: <Projects />,
           resume: <Resume />,
           themes: <Themes />,
           welcome: <Welcome />,

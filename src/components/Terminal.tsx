@@ -35,6 +35,7 @@ export const commands: Command = [
   { cmd: "help", desc: "list all commands", tab: 9 },
   { cmd: "history", desc: "display command history", tab: 6 },
   { cmd: "linkedin", desc: "open my LinkedIn profile", tab: 5 },
+  { cmd: "projects", desc: "view my selected projects", tab: 5 },
   { cmd: "resume", desc: "open my resume PDF", tab: 7 },
   { cmd: "themes", desc: "check available themes", tab: 7 },
   { cmd: "welcome", desc: "display hero section", tab: 6 },
