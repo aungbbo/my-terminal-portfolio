@@ -1,5 +1,6 @@
 import { useContext, useEffect } from "react";
 import _ from "lodash";
+import { Wrapper } from "../styles/Output.styled";
 import { termContext } from "../Terminal";
 
 const Linkedin: React.FC = () => {
@@ -17,7 +18,11 @@ const Linkedin: React.FC = () => {
     }
   }, [rerender, currentCommand]);
 
-  return <span>Opening LinkedIn profile...</span>;
+  return (
+    <Wrapper>
+      <span>Opening LinkedIn profile...</span>
+    </Wrapper>
+  );
 };
 
 export default Linkedin;

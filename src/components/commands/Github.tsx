@@ -1,5 +1,6 @@
 import { useContext, useEffect } from "react";
 import _ from "lodash";
+import { Wrapper } from "../styles/Output.styled";
 import { termContext } from "../Terminal";
 
 const Github: React.FC = () => {
@@ -17,7 +18,11 @@ const Github: React.FC = () => {
     }
   }, [rerender, currentCommand]);
 
-  return <span>Opening GitHub profile...</span>;
+  return (
+    <Wrapper>
+      <span>Opening GitHub profile...</span>
+    </Wrapper>
+  );
 };
 
 export default Github;

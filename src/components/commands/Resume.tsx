@@ -1,5 +1,6 @@
 import { useContext, useEffect } from "react";
 import _ from "lodash";
+import { Wrapper } from "../styles/Output.styled";
 import { termContext } from "../Terminal";
 
 const Resume: React.FC = () => {
@@ -17,7 +18,11 @@ const Resume: React.FC = () => {
     }
   }, [rerender, currentCommand]);
 
-  return <span>Opening resume...</span>;
+  return (
+    <Wrapper>
+      <span>Opening resume...</span>
+    </Wrapper>
+  );
 };
 
 export default Resume;

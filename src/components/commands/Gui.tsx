@@ -1,5 +1,6 @@
 import { useContext, useEffect } from "react";
 import _ from "lodash";
+import { Wrapper } from "../styles/Output.styled";
 import { termContext } from "../Terminal";
 
 const Gui: React.FC = () => {
@@ -17,7 +18,11 @@ const Gui: React.FC = () => {
     }
   }, [rerender, currentCommand]);
 
-  return <span>Opening GUI version...</span>;
+  return (
+    <Wrapper>
+      <span>Opening GUI version...</span>
+    </Wrapper>
+  );
 };
 
 export default Gui;

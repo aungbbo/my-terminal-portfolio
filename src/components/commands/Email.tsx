@@ -1,5 +1,6 @@
 import { useContext, useEffect } from "react";
 import _ from "lodash";
+import { Wrapper } from "../styles/Output.styled";
 import { termContext } from "../Terminal";
 
 const Email: React.FC = () => {
@@ -17,7 +18,11 @@ const Email: React.FC = () => {
     }
   }, [rerender, currentCommand]);
 
-  return <span>aungbbo48@gmail.com</span>;
+  return (
+    <Wrapper>
+      <span>aungbbo48@gmail.com</span>
+    </Wrapper>
+  );
 };
 
 export default Email;
