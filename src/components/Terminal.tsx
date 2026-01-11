@@ -36,9 +36,11 @@ export const commands: Command = [
   { cmd: "history", desc: "display command history", tab: 6 },
   { cmd: "linkedin", desc: "open my LinkedIn profile", tab: 5 },
   { cmd: "projects", desc: "view my selected projects", tab: 5 },
+  { cmd: "pwd", desc: "display current working directory", tab: 10 },
   { cmd: "resume", desc: "open my resume PDF", tab: 7 },
   { cmd: "themes", desc: "check available themes", tab: 7 },
   { cmd: "welcome", desc: "display hero section", tab: 6 },
+  { cmd: "whoami", desc: "display current user", tab: 7 },
 ];
 
 type Term = {

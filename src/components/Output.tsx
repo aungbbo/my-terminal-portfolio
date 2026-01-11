@@ -9,6 +9,7 @@ import History from "./commands/History";
 import Linkedin from "./commands/Linkedin";
 import Projects from "./commands/Projects";
 import Resume from "./commands/Resume";
+import TextOutput from "./commands/TextOutput";
 import Themes from "./commands/Themes";
 import Welcome from "./commands/Welcome";
 import { OutputContainer, UsageDiv } from "./styles/Output.styled";
@@ -40,9 +41,11 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           gui: <Gui />,
           linkedin: <Linkedin />,
           projects: <Projects />,
+          pwd: <TextOutput>/home/aungbobo</TextOutput>,
           resume: <Resume />,
           themes: <Themes />,
           welcome: <Welcome />,
+          whoami: <TextOutput>guest</TextOutput>,
         }[cmd]
       }
     </OutputContainer>
