@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import About from "./commands/About";
 import Clear from "./commands/Clear";
 import Echo from "./commands/Echo";
 import Email from "./commands/Email";
@@ -32,6 +33,7 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
     <OutputContainer>
       {
         {
+          about: <About />,
           clear: <Clear />,
           echo: <Echo />,
           email: <Email />,
