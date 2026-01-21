@@ -64,7 +64,7 @@ const Terminal = () => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const [inputVal, setInputVal] = useState("");
-  const [cmdHistory, setCmdHistory] = useState<string[]>([]);
+  const [cmdHistory, setCmdHistory] = useState<string[]>(["welcome"]);
   const [rerender, setRerender] = useState(false);
   const [hints, setHints] = useState<string[]>([]);
   const [pointer, setPointer] = useState(-1);

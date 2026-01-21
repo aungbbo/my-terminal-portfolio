@@ -9,9 +9,9 @@ const Gui: React.FC = () => {
   const currentCommand = _.split(history[0], " ");
 
   useEffect(() => {
-    if (rerender && currentCommand[0] === "gui") {
+  if (rerender && currentCommand[0] === "gui") {
       const timer = setTimeout(() => {
-        window.open("https://aungbobo.dev/", "_blank");
+    window.open("https://aungbobo.dev/", "_blank");
       }, 100);
 
       return () => clearTimeout(timer);
