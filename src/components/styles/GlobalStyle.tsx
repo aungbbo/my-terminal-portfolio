@@ -53,6 +53,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   input[type=text] {
+    /* normalize gives form controls font-family/size but not weight */
+    font-weight: inherit;
     background-color: ${({ theme }) => theme.colors?.body};
     color: ${({ theme }) => theme.colors?.text[100]};
     caret-color: ${({ theme }) => theme.colors?.primary};
