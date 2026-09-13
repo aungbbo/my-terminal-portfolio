@@ -3,6 +3,7 @@ import About from "./commands/About";
 import Clear from "./commands/Clear";
 import Echo from "./commands/Echo";
 import Email from "./commands/Email";
+import Experiences from "./commands/Experiences";
 import Github from "./commands/Github";
 import Gui from "./commands/Gui";
 import Help from "./commands/Help";
@@ -24,7 +25,7 @@ type Props = {
 const Output: React.FC<Props> = ({ index, cmd }) => {
   const { arg } = useContext(termContext);
 
-  const specialCmds = ["echo", "projects", "themes"]; // commands that accept args
+  const specialCmds = ["echo", "projects", "themes", "experiences"]; // commands that accept args
 
   if (!specialCmds.includes(cmd) && arg.length > 0)
     return <UsageDiv>Usage: {cmd}</UsageDiv>;
@@ -37,6 +38,7 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           clear: <Clear />,
           echo: <Echo />,
           email: <Email />,
+          experiences: <Experiences />,
           help: <Help />,
           history: <History />,
           github: <Github />,
