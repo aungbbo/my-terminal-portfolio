@@ -14,7 +14,10 @@ export const useTheme = () => {
 
   useEffect(() => {
     const localThemeName = getFromLS("tsn-theme");
-    localThemeName ? setTheme(themes[localThemeName]) : setTheme(themes.dark);
+    // A saved name can outlive its theme (renamed or removed), so fall back to
+    // the default rather than handing an undefined theme to the ThemeProvider.
+    const savedTheme = localThemeName ? themes[localThemeName] : undefined;
+    setTheme(savedTheme ?? themes.dark);
     setThemeLoaded(true);
   }, []);
 

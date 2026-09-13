@@ -136,6 +136,22 @@ const theme: Themes = {
       },
     },
   },
+  forge: {
+    id: "T_015",
+    name: "forge",
+    colors: {
+      body: "#1A0B0C",
+      scrollHandle: "#5A1A1D",
+      scrollHandleHover: "#8C2429",
+      primary: "#FF4A4F",
+      secondary: "#FFC233",
+      text: {
+        100: "#F2F0EE",
+        200: "#C0BBB7",
+        300: "#8C8481",
+      },
+    },
+  },
 };
 
 export default theme;

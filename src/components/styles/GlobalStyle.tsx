@@ -1,7 +1,9 @@
-import { createGlobalStyle, DefaultTheme } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import { normalize } from "styled-normalize";
 
-const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
+// No generic here: ThemeProvider supplies `theme`, and declaring it as a prop
+// would make every <GlobalStyle /> call site pass one explicitly.
+const GlobalStyle = createGlobalStyle`
   ${normalize}
 
   *, ::before, ::after {
