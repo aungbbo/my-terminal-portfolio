@@ -11,7 +11,7 @@ const Resume: React.FC = () => {
   useEffect(() => {
     if (rerender && currentCommand[0] === "resume") {
       const timer = setTimeout(() => {
-        window.open("https://aungbobo.dev/resume.pdf", "_blank");
+        window.open("https://aungbobo.dev/AungBo_Bo_Resume.pdf", "_blank");
       }, 100);
 
       return () => clearTimeout(timer);

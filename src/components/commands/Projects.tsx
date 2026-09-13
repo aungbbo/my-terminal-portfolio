@@ -57,13 +57,13 @@ const projects = [
     id: 2,
     title: "MindOrbit",
     desc: "A spatial productivity workspace in an immersive, XR environment.",
-    url: "https://github.com/aungbbo/MindOrbit/",
+    url: "https://devpost.com/software/abc-4ogw9r/",
   },
   {
     id: 3,
     title: "Trekteria",
     desc: "AI camping planning app that helps user explore campsites, gear, and trips.",
-    url: "https://trekteria.com/",
+    url: "https://github.com/Trekteria/trekteria/",
   },
   {
     id: 4,
