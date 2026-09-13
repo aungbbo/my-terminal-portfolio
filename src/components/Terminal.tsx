@@ -94,6 +94,8 @@ const Terminal = () => {
 
   // focus on input when terminal is clicked
   const handleDivClick = () => {
+    // don't steal the selection when the user is highlighting output text
+    if (window.getSelection()?.toString()) return;
     inputRef.current && inputRef.current.focus();
   };
   useEffect(() => {
